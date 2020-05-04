@@ -6,7 +6,9 @@ const ContenedorFrase = styled.div`
     border-radius: .5rem;
     background-color: #fff;
     max-width:800px;
-    
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     @media (min-width: 1000px) {
         margin-top: 15rem;
     }
@@ -38,7 +40,7 @@ const ContenedorFrase = styled.div`
 const Frase = ({ frase }) => {
 
 
-    if(Object.keys(frase).length === 0)  return null
+    if (Object.keys(frase).length === 0) return null
     return (
         <ContenedorFrase>
 
